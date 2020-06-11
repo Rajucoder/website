@@ -1,0 +1,25 @@
+ <!DOCTYPE HTML>
+ <html lang="en">
+ <head>
+     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+     <script>
+         $(document).ready(function(){
+             $("input[type=checkbox]").click(function(){
+               var number=$("input:checked").length;
+                $("span").text(number);
+             });
+         });
+     </script>
+ </head>
+ <body>
+     <div>
+         <input type="checkbox" />Red
+         <input type="checkbox" />Green
+         <input type="checkbox" />Blue
+         <input type="checkbox" />Black
+    </div>
+     <div id="result">
+         <p><span>0</span> are checked.</p>
+     </div>
+ </body>
+ </html>
